@@ -39,7 +39,7 @@ $stmt = $db_handle->query("SELECT * FROM messages");
 
 // Print all records
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
- echo $row['id'] . " " . $row['message'] . "<br>";
+    echo $row['id'] . " " . $row['message'] . "<br>";
 }
 
 // Close the database connection
